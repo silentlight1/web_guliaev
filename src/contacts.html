@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Контакты</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/styles/style.css">   
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/7005/7005152.png" alt="Лого" width="100" height="100">
+        </a>
+
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a>Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="title-h2">Contact Us</h2>
+        <p class="text">Звоните</p>
+        <img src="assets/img/phone.png" alt="Пиксельфон" width="50" height="50">
+
+        <h4 class="title-h4">Address</h4>
+        <p class="text">Тюмень</p>
+
+        <h4 class="title-h4">Phone</h4>
+        <ul>
+            <li><a href="tel:+71231231234">+7(123)123-12-34</a></li>
+            <li><a href="tel:+75551112233">+7(555)111-22-33</a></li>
+        </ul>
+
+        <h4 class="title-h4">Online service</h4>
+        <ul>
+            <li><a href="https://site.com">site.com</a></li>
+            <li><a href="mailto:site@mail.ru">site@mail.ru</a></li>
+        </ul>
+
+        <p class="text">г.Тюмень, ул. Перекопская, д. 15, +7(999)123-45-67.</p>
+
+        <h4 class="title-h4">Send us message</h4>
+        <!-- Метод post используется потому что данные личные и не должны храниться в url -->
+        <form class="form-bg" action="" method="post">
+            <label for="fullname">Full Name</label><br>
+            <input class="form-inputtext" type="text" id="fullname" name="fullname" size="30" placeholder="Ваше имя"><br>
+
+            <label for="email">Email</label><br>
+            <input class="form-inputtext" type="email" id="email" name="email" size="30" placeholder="Ваш Email"><br>
+
+            <label for="message">Message</label><br>
+            <textarea class="form-inputtext" id="message" name="message" cols="20" rows="5" placeholder="Ваше сообщение"></textarea><br>
+
+            <button class="form-button" type="submit">submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <h3 class="title-h3">Подвал сайта.</h3>
+        <p class="text">Подвал сайта нужен для ссылок, связью с поддержкой и др.</p>
+
+        <hr>
+
+        <ul>
+            <li>Связь.</li>
+            <li><a href="tel:+71231231234">+7(123)123-12-34</a></li>
+            <li><a href="mailto:site@mail.ru">site@mail.ru</a></li>
+        </ul>
+
+        <p class="text">Все права защищены</p>
+    </footer>
+
+</body>
+</html>

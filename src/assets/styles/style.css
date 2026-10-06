@@ -1,11 +1,95 @@
-@import "./global.css";
 @import "./fonts.css";
+@import "./global.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
 }
 
-.test {
-    color: red !important;
+.title-h1 {
+    font-size: 64px;
+    color: #1F3F68;
 }
+
+.title-h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.title-h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.title-h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.form-inputtext {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.form-button {
+    background: linear-gradient(to right, #4776E6, #8C55E8);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    cursor: pointer; /* для курсора в виде пальца после наведения*/
+}
+
+
+.form-bg {
+    background-image: url("/src/assets/img/contacts_bg.jpg");
+    border-radius: 40px;
+    padding: 50px; 
+}
+
+/* ---------------Хлебные крошки--------------- */ 
+.breadcrumbs ul {
+    list-style: none;
+    display: flex;
+    padding: 10px 45px 10px 10px;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to bottom, #FFFFFF, #397F80);
+    border-radius: 20px;
+}
+
+.breadcrumbs li {
+    font-size: 20px;
+    color: #000000;
+}
+
+.breadcrumbs a::after {
+    content: ")";
+    padding: 5px;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: -3px 0 3px #FFFFFF;    
+    transform: scaleY(2.5);
+}
+
+.breadcrumbs a {
+    color:#000000;
+    text-decoration: none;
+}
+
+/* --------------------------------------------- */
