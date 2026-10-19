@@ -1,63 +1,378 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <title>Главная</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/assets/styles/style.css">
+    <title>IT WEBSITE</title>
+    <!-- <link rel="stylesheet" href="/src/assets/styles/landing.css"> -->
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">
-            <img src="https://cdn-icons-png.flaticon.com/512/7005/7005152.png" alt="Лого" width="100" height="100">
+
+    <!--  ШАПКА  -->
+    <header class="header">
+        <a href="#" class="header__logo">
+            <img src="https://placehold.co/150x40?text=IT+WEBSITE" alt="Логотип">
         </a>
-        
-        <nav class="breadcrumbs" aria-label="Хлебные крошки">
-            <ul>
-                <li><a>Главная</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+
+        <nav class="header__nav">
+            <ul class="nav-list">
+                <li class="nav-list__item"><a href="#services">Services</a></li>
+                <li class="nav-list__item"><a href="#media">Media</a></li>
+                <li class="nav-list__item"><a href="#cases">Cases</a></li>
+                <li class="nav-list__item"><a href="#faq">FAQ</a></li>
+                <li class="nav-list__item"><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
+
+        <div class="header__contacts">
+            <a href="tel:+71111111111" class="contact-phone">+7 (111) 111-11-11</a>
+            <a href="tel:+71111111111" class="contact-phone">+7 (111) 111-11-11</a>
+            <a href="mailto:company@mail.com" class="contact-email">company@mail.com</a>
+        </div>
     </header>
 
+    <hr>
+
     <main>
-        <h1 class="title-h1">Приветствую на сайте</h1>
-        <p class="text">
-            Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
-            начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов)
-            участие в формировании поставленных обществом задач.
-        </p>
 
-        <h3 class="title-h3">Этот заголовок меньше.</h3>
+        <!--  HERO  -->
+        <section class="hero" id="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Development of mobile applications and web services of any complexity</h1>
+                <p class="hero__text">We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices.</p>
 
-        <h4 class="title-h4">Этот заголовок ещё меньше.</h4>
-        <p class="text">
-            Наглядные графики упрощают оценку прогресса группы. 
-            Дружелюбная атмосфера поддерживает мотивацию.
-        </p>
+                <div class="hero__form-wrapper">
+                    <h3 class="form-title">Leave your contacts and we will call you back within 30 minutes</h3>
+                    <form action="#" class="contact-form">
+                        <div class="form-group">
+                            <label for="hero-phone">Phone number</label>
+                            <input type="tel" id="hero-phone" name="phone" placeholder="+7 (111) 111-11-11">
+                        </div>
+                        <div class="form-group">
+                            <label for="hero-name">Full name</label>
+                            <input type="text" id="hero-name" name="name" placeholder="Ivan Ivanov">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Get consultation</button>
+                    </form>
+                </div>
+            </div>
 
-        <h3 class="title-h3">Заголовок как позапрошлый.</h3>
-        <p class="text">
-            Защита данных остаётся приоритетом для любого финансового сервиса.
-        </p>
+        </section>
 
         <hr>
+
+        <!--  УСЛУГИ  -->
+        <section class="services" id="services">
+            
+            <div class="services__info">
+                <h2 class="section-title">Full development cycle</h2>
+                <p class="section-subtitle">We use proven technologies</p>
+
+                <div class="services__categories">
+                    <article class="services__category">
+                        <h3>Web</h3>
+                        <p class="services-text">
+                            PHP / JavaScript / Node.JS<br>
+                            Web Socket / Socket.io<br>
+                            Vue.js / Nuxt / MySQL<br>
+                            Laravel / GO lang / Python
+                        </p>
+                    </article>
+
+
+                    <article class="services__category">
+                        <h3>Mobile</h3>
+                        <p class="services-text">
+                            Swift (iOS) / Alamofire / Firebase<br>
+                            Kotlin / Android / Room<br>
+                            Coroutine / RxJava
+                        </p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="services__links">
+                <ul class="services-nav">
+                    <li><a href="#">iOS development</a></li>
+                    <li><a href="#">Android development</a></li>
+                    <li><a href="#">Web development</a></li>
+                    <li><a href="#">UI/UX design</a></li>
+                    <li><a href="#">Testing</a></li>
+                    <li><a href="#">Launch</a></li>
+                    <li><a href="#">IT consulting</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <!--  ОТРАСЛИ  -->
+        <section class="industries">
+            <h2 class="section-title">Developed more than 100 projects in 15 industries</h2>
+
+            <div class="industries__tags">
+                <ul class="tags-list">
+                    <li class="tag">Social media</li>
+                    <li class="tag">Fitness and sport</li>
+                    <li class="tag">Bank</li>
+                    <li class="tag">Construction</li>
+                    <li class="tag">Game projects</li>
+                    <li class="tag">Education</li>
+                    <li class="tag">Auto, transport</li>
+                    <li class="tag">Medicine, health</li>
+                    <li class="tag">Restaurants, food delivery</li>
+                    <li class="tag">Marketplaces</li>
+                    <li class="tag">AR technology</li>
+                    <li class="tag">TV series</li>
+                    <li class="tag">Startups</li>
+                    <li class="tag">Religion</li>
+                    <li class="tag">Online courses</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        <!--  КЕЙСЫ  -->
+        <section class="cases" id="cases">
+            <h2 class="section-title">Projects we are proud of</h2>
+            <p class="section-subtitle">Our software development company is truly proud of the wonderful clients we have worked with. We enjoy a long-term partnership.</p>
+
+            <nav class="cases__tabs">
+                <ul class="tabs-list">
+                    <li class="tab-item">I-teka</li>
+                    <li class="tab-item">Dauletten</li>
+                    <li class="tab-item">Guru Bosch</li>
+                    <li class="tab-item">Santo</li>
+                    <li class="tab-item">Home Credit Bank</li>
+                    <li class="tab-item">BI Partners</li>
+                    <li class="tab-item">Europharma</li>
+                </ul>
+
+                <a href="#" class="btn btn-primary">View 100 more projects</a>    
+            </nav>
+
+            <article class="case-card">
+                <div class="case-card__info">
+                    <h3 class="case-card__title">I-teka</h3>
+                    <p class="case-card__desc">The application is designed to search for drugs by availability in pharmacies in cities. During quarantine, the application helped many people which gives more value.</p>
+                    <p class="case-card__services">Business analysis / iOS / Android / QA / UI/UX Design</p>
+
+                    <ul class="case-card__features">
+                        <li>Kazakhstan</li>
+                        <li>Medicine</li>
+                    </ul>
+
+                    <div class="case-card__stats">
+                        <div class="stat">
+                            <span class="stat__number">400%</span>
+                            <span class="stat__label">App Growth</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">+ 200 000</span>
+                            <span class="stat__label">Active Users</span>
+                        </div>
+                    </div>
+
+                    <div class="case-card__links">
+                        <a href="#" class="store-link">App Store</a>
+                        <a href="#" class="store-link">Google Play</a>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+        <hr>
+
+        <!--  ОБСУДИТЬ ПРОЕКТ  -->
+        <section class="discuss">
+            <div class="discuss__text">
+                <h2 class="discuss__title">Let's discuss Your project</h2>
+                <p class="discuss__desc">Let's figure out how to create an effective application, its cost and terms of its development</p>
+            </div>
+
+            <div class="discuss__form">
+                <form action="#" class="contact-form contact-form--white">
+                    <div class="form-group">
+                        <label for="discuss-phone">Phone number</label>
+                        <input type="tel" id="discuss-phone" name="phone" placeholder="+7 (702) 517-11-98">
+                    </div>
+                    <div class="form-group">
+                        <label for="discuss-name">Full name</label>
+                        <input type="text" id="discuss-name" name="name" placeholder="Ivan Ivanov">
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Discuss the project</button>
+                </form>
+            </div>
+        </section>
+
+        <hr>
+
+        <!--  ЭТАПЫ  -->
+        <section class="stages">
+            <h2 class="section-title">Application Development Stages</h2>
+
+            <div class="stages__grid">
+                <article class="stage-card">
+                    <h3>Analysis</h3>
+                    <p>We write technical specifications for the development of the business processes and technologies of the customer and the needs of users.</p>
+                </article>
+                <article class="stage-card">
+                    <h3>Design</h3>
+                    <p>We adopt the customer's corporate identity to the platform guidelines. We draw convenient and understandable interfaces.</p>
+                </article>
+                <article class="stage-card">
+                    <h3>Development</h3>
+                    <p>We create an extensible architecture, write clean and stable code. We integrate with customer technologies.</p>
+                </article>
+                <article class="stage-card">
+                    <h3>Testing</h3>
+                    <p>We carry out functional testing and do bug fixes. We adapt the application to different phone resolutions.</p>
+                </article>
+                <article class="stage-card">
+                    <h3>Launching</h3>
+                    <p>We design the application page and publish it in the App Store and Google Play stores.</p>
+                </article>
+                <article class="stage-card">
+                    <h3>Support</h3>
+                    <p>We monitor the stability of the application, update it for new devices and versions of iOS and Android.</p>
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <!--  КОМАНДА  -->
+        <section class="team">
+            <div class="team__content">
+                <h2 class="section-title">Our team</h2>
+                <p class="section-subtitle">Thousand is a full-cycle digital production company with its own product analytics, design, web and mobile development.</p>
+
+                <div class="team__stats">
+                    <div class="stat">
+                        <span class="stat__number">28</span>
+                        <span class="stat__label">team members</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">+100</span>
+                        <span class="stat__label">projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number">7 years</span>
+                        <span class="stat__label">in IT sphere</span>
+                    </div>
+                </div>
+
+                <p class="team__desc">All the necessary specialists - from a designer to a tester - are on our staff. We hire the best specialists in the market. It's expensive but worth it.</p>
+            </div>
+
+            <div class="team__image">
+                <img src="https://placehold.co/600x400?text=Фото+Команды" alt="Фото команды">
+            </div>
+        </section>
+
+        <hr>
+
+        <!--  КНИГА  -->
+        <section class="book">
+            <div class="book__content">
+                <h2 class="book__title">Get the book for free by leaving your contacts</h2>
+
+                <form action="#" class="contact-form contact-form--white">
+                    <div class="form-group">
+                        <label for="book-phone">Phone number</label>
+                        <input type="tel" id="book-phone" name="phone" placeholder="+7 (111) 111-11-11">
+                    </div>
+                    <div class="form-group">
+                        <label for="book-name">Your full name</label>
+                        <input type="text" id="book-name" name="name" placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="book-email">Email</label>
+                        <input type="email" id="book-email" name="email" placeholder="mail@mail.com">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send me ebook to my mail</button>
+                </form>
+            </div>
+
+            <div class="book__image">
+                <img src="https://placehold.co/300x400?text=IT+Книга" alt="Обложка книги">
+            </div>
+        </section>
+
+        <hr>
+
+        <!--  FAQ  -->
+        <section class="faq" id="faq">
+            <h2 class="section-title">FAQ</h2>
+
+            <div class="faq__list">
+
+                <details class="faq-item">
+                    <summary class="faq-item__question">What is the cost of a mobile application?</summary>
+                    <p class="faq-item__answer">Информация уточняется.</p>
+                </details>
+
+                <!-- ОТКРЫТ ПО ДЕФОЛТУ! -->
+                <details class="faq-item" open> 
+                    <summary class="faq-item__question">How long will development take?</summary>
+                    <div class="faq-item__answer">
+                        <p>Development terms directly depend on the requirements for the mobile application, the characteristics of the company, as well as the wishes of the customer.</p>
+                        <p>
+                            Average development time from start to finished application:<br>
+                            Medium projects up to <strong>3 months</strong>.<br>
+                            Large projects about <strong>4-6 months</strong>.<br>
+                            To get a more accurate estimate of the project completion time, it is necessary to determine the main task of the application, think over its logic and functionality.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-item__question">Do you provide a guarantees for the mobile application?</summary>
+                    <p class="faq-item__answer">Информация уточняется.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-item__question">I will not tell my idea, do you guarantee confidentiality?</summary>
+                    <p class="faq-item__answer">Информация уточняется.</p>
+                </details>
+
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <h3 class="title-h3">Подвал сайта.</h3>
-        <p class="text">Подвал сайта нужен для ссылок, связью с поддержкой и др.</p>
+    <hr>
 
-        <hr>
+    <!--  ПОДВАЛ  -->
+    <footer class="footer" id="contacts">
+        <div class="footer__logo">
+            <img src="https://placehold.co/150x40?text=IT+WEBSITE" alt="Логотип IT WEBSITE">
+        </div>
 
-        <ul>
-            <li>Связь.</li>
-            <li><a href="tel:+71231231234">+7(123)123-12-34</a></li>
-            <li><a href="mailto:site@mail.ru">site@mail.ru</a></li>
-        </ul>
+        <div class="footer__contacts">
+            <div class="footer-contact-item">
+                <span class="footer-contact-label">Contact number</span>
+                <a href="tel:+77783659026" class="footer-contact-value">+7 (778) 385 90 26</a>
+            </div>
+            <div class="footer-contact-item">
+                <span class="footer-contact-label">Post</span>
+                <a href="mailto:mail@mail.com" class="footer-contact-value">mail@mail.com</a>
+            </div>
+            <div class="footer-contact-item">
+                <span class="footer-contact-label">Address</span>
+                <span class="footer-contact-value">City city, street st. 90</span>
+            </div>
+            <div class="footer-contact-item">
+                <span class="footer-contact-label">Leave a request</span>
+                <a href="#" class="footer-contact-value">Leave a request</a>
+            </div>
+        </div>
 
-        <p class="text">Все права защищены</p>
+        <p class="footer__copyright">We work throughout world</p>
     </footer>
-    
+
 </body>
 </html>
