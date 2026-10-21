@@ -103,6 +103,7 @@ main {
 .hero {
     width: 100%;
     background-image: url("../icons/phones-bg.png");
+    background-color: #f2f3f7;
     background-size: contain; 
     background-position: right center;
     background-repeat: no-repeat;
