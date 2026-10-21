@@ -15,10 +15,6 @@ body {
     min-height: 100vh;
 }
 
-main {
-    flex: 1 0 auto;
-}
-
 /* ШАПКА */
 .header {
     position: sticky;
@@ -207,8 +203,7 @@ main {
 .footer {
     max-width: 1224px;
     width: calc(100% - 40px);
-    margin: 60px auto 24px auto;
-    margin-top: auto;
+    margin: auto auto 24px auto;
     background-color: #101828;
     border-radius: 12px;
     padding: 24px;
