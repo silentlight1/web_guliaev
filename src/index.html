@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT WEBSITE</title>
-    <link rel="stylesheet" href="/src/assets/styles/landing.css">
+    <link rel="stylesheet" href="/src/assets/styles/scss/landing.css">
 </head>
 <body>
 
@@ -70,12 +70,39 @@
                     </div>
                 </div>
                 <div class="hero__phones">
-                    <img src="assets/img/screenshot1.jpg" class="phone">
-                    <img src="assets/img/screenshot2.jpg" class="phone">
-                    <img src="assets/img/screenshot3.jpg" class="phone">
-                    <img src="assets/img/screenshot4.jpg" class="phone">
-                    <img src="assets/img/screenshot5.jpg" class="phone">
-                    <img src="assets/img/screenshot6.jpg" class="phone">
+                    <!-- Левая колонка (движется вверх) -->
+                    <div class="hero__phones-col">
+                        <div class="hero__phones-track track-up">
+                            <div class="track-group">
+                                <img src="assets/img/screenshot1.jpg" class="phone">
+                                <img src="assets/img/screenshot3.jpg" class="phone">
+                                <img src="assets/img/screenshot5.jpg" class="phone">
+                            </div>
+                            <!-- Дубликат для бесшовного цикла -->
+                            <div class="track-group">
+                                <img src="assets/img/screenshot1.jpg" class="phone">
+                                <img src="assets/img/screenshot3.jpg" class="phone">
+                                <img src="assets/img/screenshot5.jpg" class="phone">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Правая колонка (движется вниз) -->
+                    <div class="hero__phones-col">
+                        <div class="hero__phones-track track-down">
+                            <div class="track-group">
+                                <img src="assets/img/screenshot2.jpg" class="phone">
+                                <img src="assets/img/screenshot4.jpg" class="phone">
+                                <img src="assets/img/screenshot6.jpg" class="phone">
+                            </div>
+                            <!-- Дубликат для бесшовного цикла -->
+                            <div class="track-group">
+                                <img src="assets/img/screenshot2.jpg" class="phone">
+                                <img src="assets/img/screenshot4.jpg" class="phone">
+                                <img src="assets/img/screenshot6.jpg" class="phone">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
