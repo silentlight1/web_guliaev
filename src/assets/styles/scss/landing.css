@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #000000;
-  background: #f2f3f7;
+  background: #ffffff;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -135,12 +135,10 @@ body {
   gap: 15px;
   transform: rotate(-12deg);
   height: 700px;
-  overflow: hidden;
 }
 .hero__phones-col {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 .hero__phones-track {
   display: flex;
@@ -153,7 +151,6 @@ body {
 }
 
 .track-down {
-  transform: translateY(-50%);
   animation: scrollDown 15s linear infinite;
 }
 
