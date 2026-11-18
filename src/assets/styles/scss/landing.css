@@ -240,10 +240,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  gap: 40px;
+  gap: 100px;
   max-width: 85%;
   margin: 80px auto;
-  padding: 0 20px;
   box-sizing: border-box;
 }
 .services__info {
@@ -1114,29 +1113,6 @@ body {
 
 @media (max-width: 1024px) {
   .header {
-    gap: 15px;
-    padding: 16px;
-  }
-  .hero__title {
-    font-size: 40px;
-  }
-  .hero__text {
-    font-size: 15px;
-  }
-  .hero__phones {
-    grid-template-columns: 200px 200px;
-    margin-left: 20px;
-  }
-  .services {
-    gap: 20px;
-    padding: 0 40px;
-  }
-  .section-title {
-    font-size: 32px;
-  }
-}
-@media (max-width: 768px) {
-  .header {
     grid-template-columns: auto 1fr auto;
     height: auto;
     padding: 12px 20px;
@@ -1413,7 +1389,7 @@ body {
     font-size: 11px;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 768px) {
   .header {
     padding: 20px 10px;
     gap: 10px;
@@ -1478,7 +1454,7 @@ body {
   }
   .hero__form-wrapper {
     order: 4;
-    width: 100%;
+    width: 70%;
     margin: 0;
     padding: 24px;
     position: relative;
@@ -1714,7 +1690,7 @@ body {
   }
   .book__layout {
     grid-template-columns: 1fr;
-    grid-template-areas: "title" "book" "form";
+    grid-template-areas: "title" "form" "book";
   }
   .book__title {
     font-size: 24px;
